@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import CursorBubbles from "@/components/Effect/CursorBubbles";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +28,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <CursorBubbles
+          color="rgba(59,130,246,0.8)" // tweak color
+          maxParticles={150} // trail density cap
+          spawnEvery={1} // spawn frequency
+          blur={10} // glow
+        />
       </body>
     </html>
   );
