@@ -11,9 +11,9 @@ import React, { useEffect, useRef } from "react";
  * Props let you customize color, size, and density.
  */
 export default function CursorBubbles({
-  color = "rgba(59,130,246,0.8)", // default: Tailwind's blue-500 @ ~80% opacity
+  color = "#ffffff", // default: Tailwind's blue-500 @ ~80% opacity
   maxParticles = 120,
-  size = { min: 4, max: 14 },
+  size = { min: 1, max: 10 },
   gravity = -0.02, // negative = float upward like bubbles
   friction = 0.985, // velocity damping each frame
   blur = 8, // canvas shadowBlur for glow

@@ -29,11 +29,12 @@ export default function RootLayout({
       >
         {children}
         <CursorBubbles
-          color="rgba(59,130,246,0.8)" // tweak color
+          color="#ffffff" // tweak color
           maxParticles={150} // trail density cap
           spawnEvery={1} // spawn frequency
           blur={10} // glow
         />
+        
       </body>
     </html>
   );
