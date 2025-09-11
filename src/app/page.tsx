@@ -3,6 +3,7 @@ import { ContactSection } from "@/components/section/ContactSection";
 import { Hero } from "@/components/section/Hero";
 import ProjectSection from "@/components/section/Project";
 import ServicesSection from "@/components/section/ServiceSection";
+import { Navbar } from "@/components/Navbar"; // Import the new Navbar
 import { ShootingStars } from "@/components/UI-component/shooting-stars";
 import { StarsBackground } from "@/components/UI-component/stars-background";
 
@@ -13,13 +14,25 @@ export default function Home() {
       <StarsBackground className="z-0 pointer-events-none" />
       <ShootingStars className="z-0 pointer-events-none" />
 
+      {/* Navbar fixed at the top */}
+      <Navbar />
+
       {/* Foreground content */}
       <div className="relative z-10">
-        <Hero />
+        <section id="hero">
+          <Hero />
+        </section>
+        
         <Container>
-          <ProjectSection />
-          <ServicesSection />
-          <ContactSection />
+          <section id="projects">
+            <ProjectSection />
+          </section>
+          <section id="services">
+            <ServicesSection />
+          </section>
+          <section id="contact">
+            <ContactSection />
+          </section>
         </Container>
       </div>
     </main>
