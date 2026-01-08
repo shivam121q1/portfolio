@@ -202,7 +202,7 @@ export default function ProjectSection() {
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  ref={(el) => (projectRefs.current[index] = el)}
+                  ref={(el) => { projectRefs.current[index] = el; }}
                   data-id={project.id}
                 >
                   <ProjectCard
@@ -254,7 +254,8 @@ export default function ProjectSection() {
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  ref={(el) => (projectRefs.current[index] = el)}
+                  ref={(el) => { projectRefs.current[index] = el; }}
+                  // ref={(el) => (projectRefs.current[index] = el)}
                   data-id={project.id}
                 >
                   <ProjectCard
