@@ -28,12 +28,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <CursorBubbles
+        {/* <CursorBubbles
           color="#ffffff" // tweak color
           maxParticles={150} // trail density cap
           spawnEvery={1} // spawn frequency
           blur={10} // glow
-        />
+        /> */}
         
       </body>
     </html>

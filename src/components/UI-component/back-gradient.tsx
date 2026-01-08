@@ -21,7 +21,7 @@ export const BackgroundGradient = ({
   return (
     <div className={cn("relative group", containerClassName)}>
       {/* --- The Gradient Glow --- */}
-      <motion.div
+      {/* <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
         animate={animate ? "animate" : undefined}
@@ -45,12 +45,12 @@ export const BackgroundGradient = ({
           // It now has a base opacity and becomes fully opaque on hover.
           "opacity-60 group-hover:opacity-100" 
         )}
-      />
+      /> */}
 
       {/* --- The Solid Card Content --- */}
       <div
         className={cn(
-          "relative z-10 rounded-3xl bg-black text-white p-6",
+          "relative z-10 rounded-3xl bg-transparent text-white p-6 ",
           className
         )}
       >

@@ -52,7 +52,7 @@ export function ContactSection({
       className={cn(
         "relative isolate text-center",
         // soft vignette like your screenshot
-        "bg-[radial-gradient(900px_400px_at_50%_-10%,rgba(255,255,255,0.10),transparent_60%)]",
+        // "bg-[radial-gradient(900px_400px_at_50%_-10%,rgba(255,255,255,0.10),transparent_60%)]",
         "dark:bg-[radial-gradient(900px_400px_at_50%_-10%,rgba(255,255,255,0.06),transparent_60%)]",
         "px-6 py-16 sm:py-20 text-white",
         className

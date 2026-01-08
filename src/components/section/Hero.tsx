@@ -32,7 +32,7 @@ export function Hero() {
     <section
       className={cn(
         "relative isolate",
-        "bg-[radial-gradient(1200px_600px_at_70%_40%,rgba(255,255,255,0.10),transparent_60%)]",
+        // "bg-[radial-gradient(1200px_600px_at_70%_40%,rgba(255,255,255,0.10),transparent_60%)]",
         "dark:bg-[radial-gradient(1200px_600px_at_70%_40%,rgba(255,255,255,0.06),transparent_60%)]",
         "px-6 md:px-12 lg:px-20 py-16 lg:py-24"
       )}
@@ -48,11 +48,11 @@ export function Hero() {
       </svg>
 
       <div className="mx-auto max-w-6xl grid md:grid-cols-2 items-center gap-10 lg:gap-16 relative">
-        <div className="max-w-xl flex flex-col gap-2">
-          <h1 className="text-3xl/tight sm:text-4xl/tight lg:text-6xl/tight font-semibold tracking-[-0.02em] text-white tracking-wide">
+        <div className="max-w-xl flex flex-col gap-2 mt-4">
+          <h1 className="text-3xl/tight sm:text-4xl/tight lg:text-5xl/tight font-semibold tracking-[-0.02em] text-white tracking-wide">
             Neeyti Khandelwal
           </h1>
-          <p className="mt-3 text-lg sm:text-5xl font-bold text-white tracking-wide">
+          <p className="mt-3 text-lg sm:text-4xl font-bold text-white tracking-wide">
             <AuroraText colors={["#f1f0c8", "#d13d4d", "#ac0958"]}>
               UI/UX Designer
             </AuroraText>

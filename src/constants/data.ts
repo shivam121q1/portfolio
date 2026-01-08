@@ -17,58 +17,112 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Healthcare Course Providing Website",
-
-    description: "A user-centric healthcare education platform designed to provide seamless course discovery, enrollment, and learning experiences, with personalized dashboards and rich content like blogs, podcasts, and trainer profiles — all crafted through a human-centered UI/UX approach.",
-
+    description: `
+      <p>
+        A <strong>user-centric healthcare education platform</strong> designed to provide
+        seamless course discovery, enrollment, and learning experiences.
+      </p>
+      <ul>
+        <li>Personalized dashboards</li>
+        <li>Blogs, podcasts, and trainer profiles</li>
+        <li>Human-centered UI/UX approach</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
+    color: "#9D3A6C",
   },
   {
     id: 2,
     title: "Havmi Wellness",
-
-    description: " Havmi Wellness is an e-commerce website designed with a user-centric approach, featuring clean layouts, earthy color palettes, and high-quality product imagery to reflect the brand’s Ayurvedic roots. The site offers intuitive navigation, mobile-first responsiveness, and seamless product discovery to enhance the shopping experience. From wireframing to high-fidelity mockups, the design aligns with the brand’s ethos of natural, chemical-free wellness while ensuring accessibility and visual consistency across devices.",
-
+    description: `
+      <p>
+        <strong>Havmi Wellness</strong> is an e-commerce website designed with a
+        user-centric approach, reflecting the brand’s Ayurvedic roots.
+      </p>
+      <ul>
+        <li>Clean layouts with earthy color palettes</li>
+        <li>High-quality product imagery</li>
+        <li>Mobile-first responsive design</li>
+        <li>Seamless product discovery</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
+    color: "#9D3A6C",
   },
   {
     id: 3,
     title: "Assessment Platform",
-
-    description: "Designed a dynamic assessment platform where administrators and educators can build tests from scratch—selecting question types like multiple-choice, coding challenges, and subjective, and tailoring them with custom logic and scoring. The design emphasizes clear workflows for creating assessments, robust real-time previews of candidate experience, and seamless configuration of proctoring and result analytics. From wireframes through high-fidelity mockups, the UI balances flexibility with clarity, ensuring users can craft, launch, and manage assessments confidently across devices.",
-
+    description: `
+      <p>
+        A <strong>dynamic assessment platform</strong> enabling administrators and
+        educators to build tests from scratch with flexible logic.
+      </p>
+      <ul>
+        <li>Multiple question types (MCQ, coding, subjective)</li>
+        <li>Real-time candidate preview</li>
+        <li>Proctoring and result analytics</li>
+        <li>Clear workflows across devices</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
+    color: "#9D3A6C",
   },
   {
     id: 4,
-    title: "Rate In - Job Posting Platform",
-
-    description: "Rate In is a comprehensive hiring platform where users can post jobs, search and invite candidates, and upload resumes from multiple sources (PDF, Excel, ZIP files, etc.). The design emphasizes intuitive workflows for creating job listings, advanced candidate search with filters, seamless invitation flows, and efficient resume management. From wireframes to high-fidelity mockups, the UI balances powerful functionality with clean design, ensuring recruitment admins can act swiftly and with clarity—on both desktop and mobile.",
-
+    title: "Rate In – Job Posting Platform",
+    description: `
+      <p>
+        <strong>Rate In</strong> is a comprehensive hiring platform focused on
+        speed, clarity, and usability.
+      </p>
+      <ul>
+        <li>Create and manage job listings</li>
+        <li>Advanced candidate search and filters</li>
+        <li>Resume uploads (PDF, Excel, ZIP)</li>
+        <li>Optimized for desktop and mobile</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
+    color: "#9D3A6C",
   },
   {
     id: 5,
     title: "Credibility Alliance",
-
-    description: "Credibility Alliance is a non-profit consortium dedicated to elevating governance and transparency standards within India’s voluntary sector. I designed the website with a clear, trust-building layout, using a professional color palette and precise typography to reinforce credibility. The site features intuitive navigation, clean content hierarchy, and responsive behavior across devices—ensuring accessibility and clarity. From initial wireframes to high-fidelity designs, the UI brings the organization’s mission-driven ethos to life while maintaining consistency and usability.",
-
+    description: `
+      <p>
+        <strong>Credibility Alliance</strong> is a non-profit consortium promoting
+        governance and transparency in India’s voluntary sector.
+      </p>
+      <ul>
+        <li>Trust-building layout and typography</li>
+        <li>Clear content hierarchy</li>
+        <li>Accessible and responsive design</li>
+        <li>Mission-driven visual identity</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
+    color: "#9D3A6C",
   },
   {
     id: 6,
-    title: "Sach  India (Society for Action in Community Health)",
-
-    description: "Sach is a non-profit organization that empowers underserved communities across India through holistic interventions in healthcare, rural development, sanitation, education, and disaster relief. I designed the website to reflect SACH’s mission such as delivering mobile health units, school sanitation projects, and community resilience programs with clarity and warmth. The UI features a streamlined information hierarchy, compassionate imagery, and intuitive navigation to guide donors, beneficiaries, and volunteers effortlessly. Built with accessibility and responsiveness in mind, the design reinforces trust, aligning with SACH’s vision of creating self-reliant communities while ensuring usability across devices.",
-
+    title: "SACH India (Society for Action in Community Health)",
+    description: `
+      <p>
+        <strong>SACH</strong> empowers underserved communities through healthcare,
+        education, sanitation, and disaster relief initiatives.
+      </p>
+      <ul>
+        <li>Compassionate imagery and tone</li>
+        <li>Clear navigation for donors and volunteers</li>
+        <li>Accessible and responsive UI</li>
+        <li>Aligned with community-first mission</li>
+      </ul>
+    `,
     imgSrc: projectImage,
-    color: "#9D3A6C"
-  }
+    color: "#9D3A6C",
+  },
 ];
+
 
 export const services = [
   {

@@ -6,13 +6,14 @@ import ServicesSection from "@/components/section/ServiceSection";
 import { Navbar } from "@/components/Navbar"; // Import the new Navbar
 import { ShootingStars } from "@/components/UI-component/shooting-stars";
 import { StarsBackground } from "@/components/UI-component/stars-background";
+import ExpertiseGrid from "@/components/section/ExpertiseGrid";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col min-h-screen bg-black/90 text-white">
       {/* Background layer */}
       <StarsBackground className="z-0 pointer-events-none" />
-      <ShootingStars className="z-0 pointer-events-none" />
+      {/* <ShootingStars className="z-0 pointer-events-none" /> */}
 
       {/* Navbar fixed at the top */}
       <Navbar />
@@ -22,10 +23,13 @@ export default function Home() {
         <section id="hero">
           <Hero />
         </section>
-        
-        <Container>
+
+        <Container className="flex flex-col gap-10">
           <section id="projects">
             <ProjectSection />
+          </section>
+          <section >
+            <ExpertiseGrid />
           </section>
           <section id="services">
             <ServicesSection />
@@ -33,6 +37,7 @@ export default function Home() {
           <section id="contact">
             <ContactSection />
           </section>
+
         </Container>
       </div>
     </main>
