@@ -72,7 +72,7 @@ export function ContactSection({
             href={`mailto:${email}`}
             className="font-medium underline underline-offset-4 "
           >
-            <AuroraText colors={["#f1f0c8", "#d13d4d", "#ac0958"]}>
+            <AuroraText colors={["#ffffff", "#ffffff", "#ffffff"]}>
               {email}
             </AuroraText>
           </a>
@@ -99,7 +99,7 @@ export function ContactSection({
                       >
                         <Icon
                           className="h-4 w-4"
-                          style={{ stroke: `url(#${iconGradientId})` }}
+                         
                         />
                       </a>
                     </Button>

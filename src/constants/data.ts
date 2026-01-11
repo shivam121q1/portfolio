@@ -2,7 +2,15 @@
 
 import projectImage from "@/assets/projectImages/ProjectImage.jpeg"
 import { StaticImageData } from "next/image";
+import hcatImage from "@/assets/projectImages/Hcat.jpeg"
+import SachImage from "@/assets/projectImages/Sach.jpeg"
+import ratein from "@/assets/projectImages/ratein.jpeg"
+import asses from "@/assets/projectImages/asses.jpeg"
+
+import ceredibiltyAlliance from "@/assets/projectImages/Ceredibility alliance.jpeg"
+import havmi from "@/assets/projectImages/havmi.jpeg"
 import Icon from "@/assets/serviceIcon/UIIcon.svg"
+import { Palette, PenTool, LayoutDashboard } from "lucide-react";
 export interface Project {
   id: number;
   title: string;
@@ -28,7 +36,7 @@ export const projects: Project[] = [
         <li>Human-centered UI/UX approach</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: hcatImage,
     color: "#9D3A6C",
   },
   {
@@ -46,7 +54,7 @@ export const projects: Project[] = [
         <li>Seamless product discovery</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: havmi,
     color: "#9D3A6C",
   },
   {
@@ -64,7 +72,7 @@ export const projects: Project[] = [
         <li>Clear workflows across devices</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: asses,
     color: "#9D3A6C",
   },
   {
@@ -82,7 +90,7 @@ export const projects: Project[] = [
         <li>Optimized for desktop and mobile</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: ratein,
     color: "#9D3A6C",
   },
   {
@@ -100,7 +108,7 @@ export const projects: Project[] = [
         <li>Mission-driven visual identity</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: ceredibiltyAlliance,
     color: "#9D3A6C",
   },
   {
@@ -118,32 +126,33 @@ export const projects: Project[] = [
         <li>Aligned with community-first mission</li>
       </ul>
     `,
-    imgSrc: projectImage,
+    imgSrc: SachImage,
     color: "#9D3A6C",
   },
 ];
 
 
+
+
 export const services = [
   {
-    img: Icon,
+    icon: Palette,
     title: "UI/UX Design",
-    description:
-      "Crafting smooth, user-friendly experiences that feel simple and intuitive.",
+    description: "Crafting smooth, user-friendly experiences that feel simple and intuitive.",
     price: 100,
+    color: "#22c55e",
   },
   {
-    img: Icon,
+    icon: PenTool,
     title: "Logo Design",
-    description:
-      "Designing unique and memorable logos that bring your brand to life.",
+    description: "Designing unique and memorable logos that bring your brand to life.",
     price: 120,
+    color: "#ec4899",
   },
   {
-    img: Icon,
+    icon: LayoutDashboard,
     title: "Websites and Applications Design",
-    description:
-      "Creating modern, responsive websites and applications that work seamlessly.",
-
+    description: "Creating modern, responsive websites and applications that work seamlessly.",
+    color: "#3b82f6",
   },
 ];

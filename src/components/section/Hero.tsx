@@ -53,7 +53,7 @@ export function Hero() {
             Neeyti Khandelwal
           </h1>
           <p className="mt-3 text-lg sm:text-4xl font-bold text-white tracking-wide">
-            <AuroraText colors={["#f1f0c8", "#d13d4d", "#ac0958"]}>
+            <AuroraText colors={["#ffffff", "#ffffff", "#ffffff"]}>
               UI/UX Designer
             </AuroraText>
           </p>
@@ -68,7 +68,7 @@ export function Hero() {
               style={
                 {
                   "--aurora-gradient":
-                    "linear-gradient(to right, #f1f0c8, #d13d4d, #ac0958)",
+                    "linear-gradient(to right, #ffffff, #ffffff, #ffffff)",
                   backgroundImage: "var(--aurora-gradient)",
                   backgroundSize: "100% 2px",
                   backgroundPosition: "0 100%",
@@ -77,7 +77,7 @@ export function Hero() {
                 } as React.CSSProperties
               }
             >
-              <AuroraText colors={["#f1f0c8", "#d13d4d", "#ac0958"]}>
+              <AuroraText colors={["#ffffff", "#ffffff", "#ffffff"]}>
                 About me
               </AuroraText>
             </span>
@@ -103,7 +103,7 @@ export function Hero() {
                       >
                         <Icon
                           className="h-4 w-4"
-                          style={{ stroke: `url(#${iconGradientId})` }}
+                        
                         />
                       </a>
                     </Button>

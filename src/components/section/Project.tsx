@@ -33,29 +33,29 @@ function ProjectCard({ project, isActive, onClick, isMobile }: ProjectCardProps)
       )}
       style={{
         background: `radial-gradient(ellipse at top, ${project.color}25, transparent 70%)`,
-        borderColor: isActive ? `${project.color}80` : "#27272a",
+        borderColor: isActive ? `#ffffff80` : "#27272a",
       }}
     >
       {/* Glow Layer */}
       <div
         className="absolute inset-0 rounded-xl md:rounded-2xl blur-xl md:blur-2xl opacity-20 md:opacity-30"
         style={{
-          background: `radial-gradient(circle at top, ${project.color}55, transparent 70%)`,
+          background: `radial-gradient(circle at top, #ffffff, transparent 70%)`,
         }}
       />
 
       {/* Active Accent Bar */}
-      {isActive && (
+      {/* {isActive && (
         <div
           className="absolute left-0 top-4 bottom-4 md:top-6 md:bottom-6 w-[2px] md:w-[3px] rounded-full"
-          style={{ backgroundColor: project.color }}
+          style={{ backgroundColor: "#ffffff" }}
         />
-      )}
+      )} */}
 
       {/* Content */}
       <div className="relative z-10">
         {/* Title */}
-        <div className="flex justify-between items-start mb-3 md:mb-5">
+        {/* <div className="flex justify-between items-start mb-3 md:mb-5">
           <p className="text-gray-100 text-lg md:text-xl font-semibold max-w-[85%]">
             {project.title}
           </p>
@@ -63,7 +63,7 @@ function ProjectCard({ project, isActive, onClick, isMobile }: ProjectCardProps)
             className="size-5 md:size-7 flex-shrink-0"
             style={{ color: project.color }}
           />
-        </div>
+        </div> */}
 
         {/* Image */}
         <div className="group aspect-[16/9] bg-black/40 rounded-md md:rounded-lg overflow-hidden relative">
@@ -80,7 +80,7 @@ function ProjectCard({ project, isActive, onClick, isMobile }: ProjectCardProps)
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
 
           {/* CTA - Visible on mobile, hover on desktop */}
-          <div className={clsx(
+          {/* <div className={clsx(
             "absolute bottom-3 right-3 md:bottom-4 md:right-4 transition-all duration-300",
             isMobile ? "opacity-100" : "opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0"
           )}>
@@ -93,7 +93,7 @@ function ProjectCard({ project, isActive, onClick, isMobile }: ProjectCardProps)
             >
               View <ArrowUpRight className="size-3 md:size-4" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.div>
@@ -234,7 +234,7 @@ export default function ProjectSection() {
                 >
                   <h2
                     className="text-2xl font-bold mb-3"
-                    style={{ color: activeProject.color }}
+                 
                   >
                     {activeProject.title}
                   </h2>
@@ -280,7 +280,7 @@ export default function ProjectSection() {
                   >
                     <h2
                       className="text-4xl font-bold mb-4"
-                      style={{ color: activeProject.color }}
+               
                     >
                       {activeProject.title}
                     </h2>
