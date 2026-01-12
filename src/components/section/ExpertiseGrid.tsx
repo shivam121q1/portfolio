@@ -63,14 +63,14 @@ export default function ExpertiseGrid() {
                 <WavyText text="Expertise" className="text-5xl font-bold tracking-wide" />
             </div>
 
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-8xl mx-auto px-6">
                 <div className="overflow-hidden" ref={emblaRef}>
-                    <div className="flex gap-6">
+                    <div className="flex gap-2">
                         {/* ✅ Duplicate items for smoother loop */}
                         {[...STACKS, ...STACKS].map(({ name, Icon, color }, idx) => (
                             <div
                                 key={`${name}-${idx}`}
-                                className="flex-[0_0_75%] sm:flex-[0_0_45%] md:flex-[0_0_30%] lg:flex-[0_0_20%]"
+                                className="flex-[0_0_40%] sm:flex-[0_0_45%] md:flex-[0_0_20%] lg:flex-[0_0_15%]"
                             >
                                 <GlowCard>
                                     <Icon

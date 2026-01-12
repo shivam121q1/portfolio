@@ -28,10 +28,10 @@ export default function Home() {
           <section id="projects">
             <ProjectSection />
           </section>
-          <section >
-            <ExpertiseGrid />
-          </section>
+        
           <section id="services">
+            <ExpertiseGrid />
+            
             <ServicesSection />
           </section>
           <section id="contact">

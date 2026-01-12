@@ -42,7 +42,7 @@ export function Navbar() {
   const navLinks = [
     { id: "hero", label: "Home" },
     { id: "projects", label: "Work" },
-    { id: "services", label: "About" },
+    { id: "services", label: "Expertise and Services " },
     { id: "contact", label: "Contact" },
   ];
 
@@ -83,8 +83,8 @@ export function Navbar() {
                   <button
                     onClick={() => handleScroll(link.id)}
                     className={`px-6 py-2 text-sm font-medium rounded-full transition-all duration-300 relative z-10 backdrop-blur-sm ${activeId === link.id
-                        ? "text-white bg-white/20 border border-white/30 shadow-lg"
-                        : "text-gray-300 hover:text-white hover:bg-white/10"
+                      ? "text-white bg-white/20 border border-white/30 shadow-lg"
+                      : "text-gray-300 hover:text-white hover:bg-white/10"
                       }`}
                   >
                     {link.label}

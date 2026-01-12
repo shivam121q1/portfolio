@@ -11,6 +11,7 @@ import {
 import { Linkedin, Mail, Github, Dribbble, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import neeyatiImage from "../../assets/Neeyati.jpg";
+import neeyatiProfile from "@/assets/neeyatiProfile.jpeg"
 import { AuroraText } from "@/components/magicui/aurora-text";
 
 const socials = [
@@ -121,7 +122,7 @@ export function Hero() {
           <div className="relative h-64 w-64 md:h-72 md:w-72 lg:h-80 lg:w-80">
             <div className="absolute inset-0 rounded-full bg-black/5 dark:bg-white/10 backdrop-blur-[1px]" />
             <Image
-              src={neeyatiImage}
+              src={neeyatiProfile}
               alt="Neeyti Khandelwal"
               fill
               className="rounded-full object-cover object-center"
