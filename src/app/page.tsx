@@ -7,6 +7,7 @@ import { Navbar } from "@/components/Navbar"; // Import the new Navbar
 import { ShootingStars } from "@/components/UI-component/shooting-stars";
 import { StarsBackground } from "@/components/UI-component/stars-background";
 import ExpertiseGrid from "@/components/section/ExpertiseGrid";
+import EducationExperienceTimeline from "@/components/section/EducationExperienceTimeline";
 
 export default function Home() {
   return (
@@ -25,15 +26,20 @@ export default function Home() {
         </section>
 
         <Container className="flex flex-col gap-10">
+          <section id="educationwork">
+            <EducationExperienceTimeline />
+          </section>
           <section id="projects">
             <ProjectSection />
           </section>
-        
+
+
           <section id="services">
             <ExpertiseGrid />
-            
+
             <ServicesSection />
           </section>
+
           <section id="contact">
             <ContactSection />
           </section>
