@@ -21,12 +21,12 @@ export default function Home() {
 
       {/* Foreground content */}
       <div className="relative z-10">
-        <section id="hero">
+        <section id="about">
           <Hero />
         </section>
 
         <Container className="flex flex-col gap-10">
-          <section id="educationwork">
+          <section id="educationandwork">
             <EducationExperienceTimeline />
           </section>
           <section id="projects">
@@ -34,9 +34,12 @@ export default function Home() {
           </section>
 
 
-          <section id="services">
+          <section id="expertise">
             <ExpertiseGrid />
 
+
+          </section>
+          <section id="services">
             <ServicesSection />
           </section>
 

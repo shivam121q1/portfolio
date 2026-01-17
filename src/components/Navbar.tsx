@@ -40,9 +40,11 @@ const useScrollspy = (ids: string[], options: IntersectionObserverInit) => {
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
-    { id: "hero", label: "Home" },
-    { id: "projects", label: "Work" },
-    { id: "services", label: "Expertise and Services " },
+    { id: "about", label: "About" },
+    { id: "educationandwork", label: "Education & Work" },
+    { id: "projects", label: "Projects" },
+    { id: "expertise", label: "Expertise" },
+    { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
   ];
 
