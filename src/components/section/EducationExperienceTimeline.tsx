@@ -31,6 +31,7 @@ const education: TimelineItem[] = [
         range: "2019",
         org: "Rajmata Krishna Kumari Girl’s Public School, Jodhpur, Rajasthan",
         title: "Matriculation (10th CBSE Board)",
+        meta: "78.2%",
     },
 ];
 
