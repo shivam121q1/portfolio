@@ -30,7 +30,7 @@ const STACKS: Stack[] = [
     { name: "Miro", Icon: SiMiro, color: "text-yellow-400" },
     { name: "Canva", Icon: SiCanva, color: "text-cyan-400" },
     { name: "Sketch", Icon: SiSketch, color: "text-orange-400" },
-    { name: "Adobe Illustrator", Icon: SiAdobeillustrator, color: "text-orange-500" },
+    // { name: "Adobe Illustrator", Icon: SiAdobeillustrator, color: "text-orange-500" },
     { name: "Jira", Icon: SiJira, color: "text-blue-500" },
     { name: "Webflow", Icon: SiWebflow, color: "text-indigo-400" },
     { name: "HTML", Icon: FaHtml5, color: "text-orange-600" },
