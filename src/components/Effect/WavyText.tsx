@@ -12,11 +12,11 @@ export function WavyText({ text, as: Element = 'h2', className, ...props }: Wavy
   const letters = text.split('');
 
   return (
-    <Element className={cn("inline-flex", className)} {...props}>
+    <Element className={cn("inline-flex tracking-tight", className)} {...props}>
       {letters.map((letter, index) => (
         <span
           key={index}
-          className="transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2 hover:scale-110 hover:-rotate-12"
+          className="transition-all -mr-0.5 duration-300 ease-in-out hover:transform hover:-translate-y-2 hover:scale-110 hover:-rotate-12"
           style={{ display: 'inline-block' }} // Necessary for transform to work correctly
         >
           {letter === ' ' ? '\u00A0' : letter}

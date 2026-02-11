@@ -108,17 +108,17 @@ function TimelineColumn({
                         >
                             <div className="max-w-[520px]">
                                 <div className="absolute top-2 right-2 border-white">
-                                    <span className="inline-flex items-center justify-center border rounded-full  px-5 py-2 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.25)]">
+                                    <span className="inline-flex items-center justify-center border rounded-full px-2 py-1  md:px-5 md:py-2 text-xs md:text-sm font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.25)]">
                                         {item.range}
                                     </span>
                                 </div>
 
-                                <h3 className="text-lg font-extrabold text-white">
+                                <h3 className="text-base md:text-lg font-extrabold text-white mt-4 md:mt-0">
                                     {item.title}
                                 </h3>
                                 <div className="mt-1 flex flex-wrap  items-center gap-2">
 
-                                    <p className="text-lg  font-bold text-white/60">
+                                    <p className="text-base md:text-lg  font-bold text-white/60">
                                         {item.org}
                                     </p>
 
@@ -161,7 +161,7 @@ export default function EducationExperienceTimeline() {
     return (
         <section className="w-full py-16">
             <div className="flex justify-center items-center mb-20 z-10 text-white">
-                <WavyText text="Education & Work" className="text-5xl font-bold tracking-wide" />
+                <WavyText text="Education & Work" className="text-3xl md:text-5xl font-bold tracking-wide" />
             </div>
             <div className="mx-auto w-full max-w-8xl px-4">
                 <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">

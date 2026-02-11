@@ -11,15 +11,10 @@ import EducationExperienceTimeline from "@/components/section/EducationExperienc
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen bg-black/90 text-white">
-      {/* Background layer */}
-      <StarsBackground className="z-0 pointer-events-none" />
-      {/* <ShootingStars className="z-0 pointer-events-none" /> */}
 
-      {/* Navbar fixed at the top */}
+    <>
       <Navbar />
 
-      {/* Foreground content */}
       <div className="relative z-10">
         <section id="about">
           <Hero />
@@ -49,6 +44,7 @@ export default function Home() {
 
         </Container>
       </div>
-    </main>
+    </>
+
   );
 }

@@ -7,6 +7,7 @@ import { WavyText } from "../Effect/WavyText";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import clsx from "clsx";
+import { ViewButton } from "../UI-component/ViewButton";
 
 /* ---------------- PROJECT CARD ---------------- */
 
@@ -80,22 +81,24 @@ function ProjectCard({ project, isActive, onClick, isMobile }: ProjectCardProps)
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
 
           {/* CTA - Visible on mobile, hover on desktop */}
-          {/* <div className={clsx(
-            "absolute bottom-3 right-3 md:bottom-4 md:right-4 transition-all duration-300",
-            isMobile ? "opacity-100" : "opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0"
-          )}>
-            <div
-              className="flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-xs md:text-sm backdrop-blur-md"
-              style={{
-                backgroundColor: `${project.color}22`,
-                color: project.color,
-              }}
-            >
-              View <ArrowUpRight className="size-3 md:size-4" />
-            </div>
-          </div> */}
+
         </div>
+
       </div>
+      {/* <div className={clsx(
+        "absolute -bottom-2 right-1 z-1000 md:bottom-2 md:right-4 transition-all duration-300 opacity-100 translate-y-0 cursor-pointer",
+        // isMobile ? "opacity-100" : "opacity-0translate-y-2 ggroup-hover:translate-y-0"
+      )}>
+        <div
+          className="flex items-center gap-1.5 md:gap-2 px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-xs md:text-xs backdrop-blur-md"
+          style={{
+            // backgroundColor: `${project.color}22`,
+            // color: project.color,
+          }}
+        >
+          View <ArrowUpRight className="size-3 md:size-4" />
+        </div>
+      </div> */}
     </motion.div>
   );
 }
@@ -189,7 +192,7 @@ export default function ProjectSection() {
       <div className="flex justify-center items-center mb-12 md:mb-20">
         <WavyText
           text="Projects"
-          className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider"
+          className="text-3xl md:text-5xl font-bold tracking-wide"
         />
       </div>
 
@@ -234,7 +237,7 @@ export default function ProjectSection() {
                 >
                   <h2
                     className="text-2xl font-bold mb-3"
-                 
+
                   >
                     {activeProject.title}
                   </h2>
@@ -248,14 +251,17 @@ export default function ProjectSection() {
           </div>
         ) : (
           /* Desktop Layout: Original two-column */
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 relative">
+          /* Desktop Layout: Improved scroll-aligned two-column */
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 relative">
+
             {/* LEFT: Cards */}
-            <div className="space-y-24 pb-[50vh]">
+            <div className="space-y-24 pb-[8vh]">
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  ref={(el) => { projectRefs.current[index] = el; }}
-                  // ref={(el) => (projectRefs.current[index] = el)}
+                  ref={(el) => {
+                    projectRefs.current[index] = el;
+                  }}
                   data-id={project.id}
                 >
                   <ProjectCard
@@ -267,32 +273,50 @@ export default function ProjectSection() {
               ))}
             </div>
 
+            {/* RIGHT: Sticky Details (CENTERED PROPERLY) */}
             {/* RIGHT: Sticky Details */}
-            <div className="w-full h-screen sticky top-0 flex items-center justify-center p-8">
-              <div className="w-full max-w-lg">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeProject.id}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -30 }}
-                    transition={{ duration: 0.35, ease: "easeInOut" }}
-                  >
-                    <h2
-                      className="text-4xl font-bold mb-4"
-               
-                    >
-                      {activeProject.title}
-                    </h2>
-                    <div
-                      className="text-gray-300 mb-8 leading-relaxed [&_p]:mb-3 [&_ul]:mt-2 [&_ul]:pl-0 [&_ul]:ml-0 [&_li]:list-disc [&_li]:list-inside"
-                      dangerouslySetInnerHTML={{ __html: activeProject.description }}
-                    />
-                  </motion.div>
-                </AnimatePresence>
+            <div className="relative">
+              <div className="sticky top-32">
+                <div className="flex items-center min-h-[calc(100vh-8rem)] px-8">
+                  <div className="w-full max-w-lg">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={activeProject.id}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{
+                          duration: 0.4,
+                          ease: [0.22, 1, 0.36, 1],
+                        }}
+                      >
+                        <h2 className="text-xl md:text-3xl font-bold mb-5 leading-tight">
+                          {activeProject.title}
+                        </h2>
+
+                        <div
+                          className="text-gray-300 leading-relaxed
+                         [&_p]:mb-4
+                         [&_ul]:mt-3
+                         [&_li]:list-disc
+                         [&_li]:list-inside"
+                          dangerouslySetInnerHTML={{
+                            __html: activeProject.description,
+                          }}
+                        />
+                      </motion.div>
+                
+
+                      <ViewButton  onClick={() => { }} />
+                    </AnimatePresence>
+                  </div>
+
+                </div>
               </div>
             </div>
+
           </div>
+
         )}
       </div>
     </div>

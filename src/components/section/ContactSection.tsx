@@ -62,7 +62,7 @@ export function ContactSection({
         <div className="flex justify-center items-center ">
           <WavyText
             text="Get In Touch!"
-            className="text-5xl font-bold tracking-wide"
+            className="text-3xl md:text-5xl font-bold tracking-wide"
           ></WavyText>
         </div>
 
@@ -99,7 +99,7 @@ export function ContactSection({
                       >
                         <Icon
                           className="h-4 w-4"
-                         
+
                         />
                       </a>
                     </Button>

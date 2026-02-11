@@ -21,7 +21,7 @@ interface ServiceCardProps {
   index: number;
 }
 
-function ServiceCardNew({ service, index }: ServiceCardProps) {
+export function ServiceCardNew({ service, index }: ServiceCardProps) {
   const Icon = service?.icon;
   return (
     <motion.div
@@ -29,7 +29,7 @@ function ServiceCardNew({ service, index }: ServiceCardProps) {
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
       className={clsx(
-        "relative w-full max-w-md p-5 md:p-6 rounded-xl md:rounded-2xl border overflow-hidden transition-all duration-500",
+        "relative w-full max-w-lg p-5 md:p-6 rounded-xl md:rounded-2xl border overflow-hidden transition-all duration-500",
 
       )}
       style={{
@@ -38,16 +38,21 @@ function ServiceCardNew({ service, index }: ServiceCardProps) {
       }}
     >
       {/* Soft Glow */}
-   
+
 
       <div className="relative z-10">
         {/* Header */}
         <div className="flex items-start justify-between gap-4 mb-4">
           <div className="flex items-center gap-3">
             {/* Icon */}
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-primary-foreground/10 text-gray-900 ">
-              {Icon ? <Icon className="size-6 text-white" /> : <span className="font-bold">{index + 1}</span>}
-            </div>
+            {
+              Icon && (
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-primary-foreground/10 text-gray-900 ">
+                  {Icon ? <Icon className="size-6 text-white" /> : <span className="font-bold">{index + 1}</span>}
+                </div>
+              )
+            }
+
 
             {/* Title */}
             <h3 className="text-lg md:text-xl font-semibold text-primary-foreground">
@@ -59,7 +64,7 @@ function ServiceCardNew({ service, index }: ServiceCardProps) {
         </div>
 
         {/* Desc */}
-        <p className="text-primary-foreground text-sm md:text-base">
+        <p className="text-white/80 text-sm md:text-base ">
           {service.description}
         </p>
       </div>
@@ -73,7 +78,7 @@ export default function ServicesSection() {
   return (
     <section className="py-12 px-4">
       <div className="flex justify-center items-center mb-20 z-10 text-white">
-        <WavyText text="Services" className="text-5xl font-bold tracking-wide" />
+        <WavyText text="Services" className="text-3xl md:text-5xl font-bold tracking-wide" />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">

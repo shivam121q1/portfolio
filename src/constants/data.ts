@@ -2,6 +2,7 @@
 
 import projectImage from "@/assets/projectImages/ProjectImage.jpeg"
 import { StaticImageData } from "next/image";
+import { GraduationCap, Stethoscope } from "lucide-react";
 import hcatImage from "@/assets/projectImages/Hcat.jpeg"
 import SachImage from "@/assets/projectImages/Sach.jpeg"
 import ratein from "@/assets/projectImages/ratein.jpeg"
@@ -153,6 +154,29 @@ export const services = [
     icon: LayoutDashboard,
     title: "Websites and Applications Design",
     description: "Creating modern, responsive websites and applications that work seamlessly.",
+    color: "#3b82f6",
+  },
+];
+
+
+
+export const targetUsers = [
+  {
+    // icon: GraduationCap,
+    title: "Students",
+
+    description:
+      "The primary target users are students and aspiring healthcare professionals seeking job opportunities, certifications, and career advancement within the UK healthcare system. This includes UK-based students, recent graduates, and international healthcare professionals who require guidance on NHS recruitment processes, professional registration, interview preparation, and recognized healthcare certifications. The platform is designed to support users at different stages of their career journey by offering structured training programs. Through a personalized dashboard, students can access enrolled courses, view session schedules, join live online lectures, download learning resources, ensuring a seamless and supportive learning experience.",
+
+    color: "#22c55e",
+  },
+  {
+    // icon: Stethoscope,
+    title: "Trainers",
+
+    description:
+      "The secondary target users are healthcare trainers and educators who deliver professional training through both live and online sessions. These trainers use the platform to manage their teaching activities efficiently, including conducting live virtual classes, sharing learning materials, and uploading resources for students to access at any time. The system allows trainers to view upcoming sessions, manage their profiles, and maintain structured course content, enabling consistent and high-quality knowledge delivery. By centralizing session management and resource sharing, the platform supports trainers in engaging learners effectively while maintaining flexibility across online and live training formats.",
+
     color: "#3b82f6",
   },
 ];

@@ -60,7 +60,7 @@ export default function ExpertiseGrid() {
     return (
         <section className="relative">
             <div className="text-center mb-10">
-                <WavyText text="Expertise" className="text-5xl font-bold tracking-wide" />
+                <WavyText text="Expertise" className="text-3xl md:text-5xl font-bold tracking-wide" />
             </div>
 
             <div className="max-w-8xl mx-auto px-6">

@@ -53,13 +53,13 @@ export function Hero() {
           <h1 className="text-3xl/tight sm:text-4xl/tight lg:text-5xl/tight font-semibold tracking-[-0.02em] text-white tracking-wide">
             Neeyti Khandelwal
           </h1>
-          <p className="mt-3 text-lg sm:text-4xl font-bold text-white tracking-wide">
+          <p className="mt-3 text-lg sm:text-3xl font-bold text-white tracking-wide">
             <AuroraText colors={["#ffffff", "#ffffff", "#ffffff"]}>
               UI/UX Designer
             </AuroraText>
           </p>
 
-          <p className="mt-4 text-sm sm:text-lg text-muted-foreground text-white">
+          <p className="mt-4 text-sm sm:text-lg text-white/80">
             Crafting intuitive experiences that solve real problems. As a UI/UX
             designer, I strive to build impactful and effortlessly simple
             solutions. My focus is on understanding user needs and translating
