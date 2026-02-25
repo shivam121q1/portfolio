@@ -3,13 +3,14 @@ import { ServiceCardNew } from "@/components/section/ServiceSection";
 import { targetUsers } from "@/constants/data";
 import React from "react";
 
-import image from "@/assets/Desktop - 2.png"
+import image from "@/assets/projectImages/Desktop - 2 (1) (1).png"
+import image2 from "@/assets/projectImages/Desktop - 4.png"
 import Image from "next/image";
 
 const page = () => {
     return (
         <div className="relative z-10">
-            <section className="max-w-6xl mx-auto px-6 md:px-8 py-16 lg:py-24">
+            <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 lg:py-24">
 
                 {/* Heading */}
                 <h2 className="text-2xl md:text-5xl font-semibold text-center mb-16">
@@ -99,8 +100,23 @@ const page = () => {
                         ))}
                     </div>
                 </div>
-                <div>
-                    <Image src={image} alt="Project Image" className="w-full h-auto rounded-lg shadow-lg" />
+                <div className=" text-center md:text-left mb-20">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-4">
+                       Wireframe
+                    </h3>
+
+                   
+               
+                    <Image src={image} alt="Project Image" className="w-full h-auto" />
+                </div>
+                            <div className=" text-center md:text-left mb-20">
+                    <h3 className="text-xl md:text-2xl font-semibold mb-4">
+                       Prototype
+                    </h3>
+
+                   
+               
+                    <Image src={image2} alt="Project Image" className="w-full h-auto" />
                 </div>
 
             </section>
