@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import clsx from "clsx";
 import { ViewButton } from "../UI-component/ViewButton";
+import { useRouter } from "next/navigation";
 
 /* ---------------- PROJECT CARD ---------------- */
 
@@ -110,7 +111,7 @@ export default function ProjectSection() {
   const [isMobile, setIsMobile] = useState(false);
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const detailsRef = useRef<HTMLDivElement>(null);
-
+  const router = useRouter();
   // Detect mobile viewport
   useEffect(() => {
     const checkMobile = () => {
@@ -245,6 +246,8 @@ export default function ProjectSection() {
                     className="text-gray-300 text-sm leading-relaxed [&_p]:mb-2 [&_ul]:mt-2 [&_ul]:pl-0 [&_ul]:ml-0 [&_li]:list-disc [&_li]:list-inside [&_li]:text-sm"
                     dangerouslySetInnerHTML={{ __html: activeProject.description }}
                   />
+
+                  <ViewButton onClick={() => { router.push(`/project/${activeProject.id}`) }} />
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -305,9 +308,9 @@ export default function ProjectSection() {
                           }}
                         />
                       </motion.div>
-                
 
-                      <ViewButton  onClick={() => { }} />
+
+                      <ViewButton onClick={() => { router.push(`/project/${activeProject.id}`) }} />
                     </AnimatePresence>
                   </div>
 

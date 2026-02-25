@@ -12,6 +12,14 @@ import ceredibiltyAlliance from "@/assets/projectImages/Ceredibility alliance.jp
 import havmi from "@/assets/projectImages/havmi.jpeg"
 import Icon from "@/assets/serviceIcon/UIIcon.svg"
 import { Palette, PenTool, LayoutDashboard } from "lucide-react";
+
+import havmiwireframe from "@/assets/havmi/Desktop - 61.png"
+import havmiprototype from "@/assets/havmi/Desktop - 2 (2).png"
+
+
+
+import wireframe1 from "@/assets/projectImages/Desktop - 2 (1) (1).png";
+import prototype1 from "@/assets/projectImages/Desktop - 4.png";
 export interface Project {
   id: number;
   title: string;
@@ -179,4 +187,88 @@ export const targetUsers = [
 
     color: "#3b82f6",
   },
+];
+
+
+export const Indiviualprojects = [
+  {
+    id: 1,
+    title: "Healthcare Career and Training UK",
+    overview: `
+Healthcare Career and Training UK previously had no online presence.
+This project involved designing and launching a completely new website
+from the ground up, aimed at delivering healthcare education and training
+in a structured and accessible manner.
+
+Once registered, users gain access to a personalized dashboard.
+Students can view enrolled courses, access session schedules, join live
+lectures, and download learning resources. Trainers can manage their
+sessions, upload materials, and maintain their profiles.
+
+The system also supports automated and customized email communication
+for key user actions such as enrollment confirmations and session
+reminders.
+    `,
+    role: "UI/UX Designer",
+    tools: ["Figma", "FigJam", "Jira", "Canva"],
+    duration: "1 Month",
+    targetUsers: [
+      {
+        // icon: GraduationCap,
+        title: "Students",
+
+        description:
+          "The platform serves students and aspiring healthcare professionals seeking UK-recognized certifications and better career opportunities in the healthcare sector. It supports them with structured training programs and guidance on NHS recruitment, professional registration, and interview preparation. Through a personalized dashboard, students can access courses, join live sessions, view schedules, and download learning resources, ensuring a smooth and supportive learning experience.",
+
+        color: "#22c55e",
+      },
+      {
+        // icon: Stethoscope,
+        title: "Trainers",
+
+        description:
+          "The platform also supports healthcare trainers who deliver both live and online sessions. Trainers can manage their sessions, upload materials, share resources, and maintain their profiles within a structured system. The interface is designed to simplify content management and enhance interaction with learners, ensuring an efficient and engaging training experience.",
+
+        color: "#3b82f6",
+      },
+    ],
+    wireframeImage: wireframe1,
+    prototypeImage: prototype1,
+  },
+  {
+    id: 2,
+    title: "Havmi Welness",
+    overview: `
+The Havmi Wellness website was designed and developed for a Kerala-based Ayurvedic products manufacturing company to create a modern digital platform for showcasing and selling different products. The project focused on building a clean, user-friendly e-commerce experience that reflects the brand’s authentic Ayurvedic identity while ensuring smooth product discovery and purchasing. Users can explore a wide range of products across categories such as wellness healthcare, hair care, and grains & spices through structured navigation and visually engaging product presentation.
+The design emphasizes simplicity, clarity, and accessibility to enhance engagement and reduce friction in the buying journey. Key UX features include intuitive category navigation, prominent best-seller sections, and clearly displayed product information such as pricing and variants to support quick decision-making. The layout follows a clear visual hierarchy, highlighting essential elements like product listings and call-to-action buttons (Add to Cart / Buy Now). 
+A major focus of the project was creating a seamless and transparent purchasing experience. The e-commerce flow enables users to browse products, view details, select variants, manage their cart, and complete checkout with minimal effort. Features like structured product cards, quick category access, and an optimized interface support smooth interaction across the customer journey.
+    `,
+    role: "UI/UX Designer",
+    tools: ["Figma", "FigJam", "Jira", "Canva"],
+    duration: "1 Month",
+    targetUsers: [
+      {
+        // icon: GraduationCap,
+        title: "Customers",
+
+        description:
+          "The website targets health-conscious users looking for authentic Ayurvedic products for wellness, hair care, and daily use. It is designed to help users easily discover products and complete purchases through a simple and intuitive shopping experience.",
+
+        color: "#22c55e",
+      },
+      {
+        // icon: Stethoscope,
+        title: "Retail & Business Buyers",
+
+        description:
+          "The platform also serves retailers and distributors who want to explore and purchase Ayurvedic products efficiently through structured product information and smooth navigation.",
+
+        color: "#3b82f6",
+      },
+    ],
+    wireframeImage: havmiwireframe,
+    prototypeImage: havmiprototype,
+  }
+
+  // You can add more projects here
 ];

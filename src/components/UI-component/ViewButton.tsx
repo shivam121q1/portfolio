@@ -1,11 +1,13 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 
 interface ViewButtonProps {
     active?: boolean;
     onClick?: () => void;
+    content?: string;
+    showArrow?:boolean;
 }
 
-export function ViewButton({ active = false, onClick }: ViewButtonProps) {
+export function ViewButton({ active = false, onClick, content="View", showArrow = true }: ViewButtonProps) {
     return (
         <button
             onClick={onClick}
@@ -32,8 +34,9 @@ export function ViewButton({ active = false, onClick }: ViewButtonProps) {
         active:scale-[0.96]
       `}
         >
-            <span>View</span>
-            <ArrowUpRight className="size-4.5" />
+            {!showArrow && <ArrowLeft className="size-4.5" />}
+            <span>{content}</span>
+            {showArrow && <ArrowUpRight className="size-4.5" />}
         </button>
     );
 }
